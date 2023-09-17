@@ -1,0 +1,4 @@
+A dictionary is an unordered collection of arbitrary
+objects are accessible by key.
+They are sometimes also called associative arrays
+or hash tables
