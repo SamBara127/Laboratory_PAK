@@ -70,14 +70,11 @@ class Item:
         """ a - b """
         return self._count - num
 
-    def __iadd__(self, num):
-        """ a += b """
-        return self._count + num
 
         
 
 item = Item(2)
-print(item += 1)
+print(item == 1)
 # print(item.count * 2)
 # ret = item.update_count(8)
 # print(ret, item.count)
