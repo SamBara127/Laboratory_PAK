@@ -102,17 +102,20 @@ class Accountant:
 
 
     def give_salary(self, cl: Lupa):
+        assert(type(cl) == Lupa)
         cl.take_salary(2)
 
 
     def give_salary(self, cl: Pupa):
+        assert(type(cl) == Pupa)
         cl.take_salary(2)
 
     
 if __name__ == '__main__':
     lupa = Lupa()
     pupa = Pupa()
-    lupa.do_work('lupa_pupa\matrix_1.txt', 'lupa_pupa\matrix_2.txt')
+    a = 5
+    lupa.do_work('matrix_1.txt', 'matrix_2.txt')
     sal = Accountant(pupa, lupa)
     sal.give_salary(pupa)
     print(pupa._val)
